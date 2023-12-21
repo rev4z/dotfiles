@@ -48,6 +48,8 @@ return packer.startup(function(use)
 
   use("hrsh7th/cmp-nvim-lsp")
 
+  use({'neoclide/coc.nvim', branch = 'release'})
+
   if packer_bootstrap then
     require("packer").sync()
   end
